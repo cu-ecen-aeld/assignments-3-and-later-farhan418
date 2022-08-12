@@ -4,7 +4,7 @@ writer: writer.c
 ifeq ($(CROSS_COMPILE),gcc)
 	gcc -o writer writer.c
 else
-	$(CROSS_COMPILE) -o writer writer.c
+	$(CROSS_COMPILE)gcc -o writer writer.c
 endif
 
 clean:
